@@ -19,18 +19,33 @@ body {
     
 }
 
+.navbar img {
+    width: 40px;
+    height: 40px;
+    background-color: aqua;
+    cursor: pointer;
+}
+
 .navbar {
     position: fixed;
     display: flex;
-    background-color:var(--black);
+    background-color:black;
     padding: 0.3rem;
+    
+    text-align: center;
+    width: 500px;
+    height: 40%;
 }
 
 .menu {
     gap: 0.4rem;
     display: flex;
     gap: 1.2rem;
-    justify-content:center
+    flex-direction: column;
+    
+    
+    
+    
 } 
 
 .menu li {
@@ -41,7 +56,9 @@ body {
 
 .menu a {
     text-decoration: none;
-    color: var(--grey);
+    color: var(--white);
+    
+
 }
 
 .menu a:hover {
@@ -51,9 +68,10 @@ body {
 
 
 .container {
-    max-width: 444px;
+    max-width: 500px;
     margin: 0 auto;
     background-color: var(--black);
+    
 }
 
 .header > img {
