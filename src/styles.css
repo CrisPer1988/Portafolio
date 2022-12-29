@@ -79,8 +79,15 @@ body {
     color: var(--grey);
 }
 
+.icon__header {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
 .info p {
     color: var(--grey);
+    margin-bottom: 2rem;
 }
 
 .experience {
@@ -91,6 +98,10 @@ body {
     text-align: center;
     gap: 1rem;
     color: var(--grey);
+}
+
+.experience {
+    margin-top: 2rem;
 }
 
 .experience h4 {
