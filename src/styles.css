@@ -44,6 +44,10 @@ body {
     color: var(--grey);
 }
 
+.menu a:hover {
+    color: antiquewhite;
+}
+
 
 
 .container {
