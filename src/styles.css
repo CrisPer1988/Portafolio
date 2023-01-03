@@ -28,7 +28,7 @@ body {
     z-index: 1000;
 
     display: flex;
-    justify-content: end;
+    justify-content: start;
 }
 
 .icon__menu img {
@@ -40,11 +40,18 @@ body {
 
 .content__menu {
     background-color:var(--white);
-    min-width: 500px;
-   height: 100vh;
+    max-width: 1020px;
+    height: 100vh;
     position: fixed;
     transition: transform 0.5s;
     z-index: 999;
+
+     display: flex;
+    justify-content: center;
+    align-items: center; 
+
+   
+    
     
 }
 
@@ -64,23 +71,27 @@ body {
  .content__menu ul {
     padding: 100px 0px 20px 0px;
     list-style: none; 
+    
    
 
 } 
 
  .content__menu ul li {
+    
     color: var(--black);
     text-decoration: none;
     padding: 10px 50px; 
-    cursor: pointer;
     text-align: center;
+    cursor: pointer;
+    
+    /* text-align: center; */
 }
 
 .content__menu ul li a {
     text-decoration: none;
     color: var(--black);
     font-size: 1.5rem;
-    
+   
 }
 
 
