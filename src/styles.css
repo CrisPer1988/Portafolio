@@ -8,6 +8,7 @@
     --black:#020403;
     --grey:#ADADAD;
     --white:#FFFFFF;
+    --greyoscuro:#646262;
 }
 
 html {
@@ -40,7 +41,7 @@ body {
 
 .content__menu {
     background-color:var(--white);
-    max-width: 1020px;
+    width: 100%;
     height: 100vh;
     position: fixed;
     transition: transform 0.5s;
@@ -74,9 +75,10 @@ body {
 
  .content__menu ul li {
     
-    color: var(--black);
+    
     text-decoration: none;
-    padding: 20px 80px; 
+    /* padding: 20px 80px;  */
+    margin: 30px 20px;
     text-align: center;
     cursor: pointer;
     
@@ -85,7 +87,7 @@ body {
 
 .content__menu ul li a {
     text-decoration: none;
-    color: var(--grey);
+    color: var(--greyoscuro);
     font-size: 1.5rem;
    
 }
