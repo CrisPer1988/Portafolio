@@ -34,7 +34,7 @@ body {
 .icon__menu img {
     width: 40px;
     cursor: pointer;
-    background-color:var(--grey);
+    background-color:var(--white);
     position: fixed;
 }
 
@@ -69,18 +69,14 @@ body {
 
 
  .content__menu ul {
-    padding: 100px 0px 20px 0px;
     list-style: none; 
-    
-   
-
 } 
 
  .content__menu ul li {
     
     color: var(--black);
     text-decoration: none;
-    padding: 10px 50px; 
+    padding: 20px 80px; 
     text-align: center;
     cursor: pointer;
     
@@ -89,7 +85,7 @@ body {
 
 .content__menu ul li a {
     text-decoration: none;
-    color: var(--black);
+    color: var(--grey);
     font-size: 1.5rem;
    
 }
