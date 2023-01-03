@@ -19,9 +19,16 @@ body {
     
 }
 
+/* img {
+    display: block;
+} */
+
 .icon__menu{
     position: relative;
     z-index: 1000;
+
+    display: flex;
+    justify-content: end;
 }
 
 .icon__menu img {
@@ -29,26 +36,21 @@ body {
     cursor: pointer;
     background-color:var(--grey);
     position: fixed;
-    
-   
 }
 
 .content__menu {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center; */
-
-
     background-color:var(--white);
-    min-width: 600px;
+    min-width: 500px;
     height: 100vh;
     position: fixed;
-    top: inherit;
-    left: inherit;
+    /* top: inherit;
+    left: inherit; */
     transition: transform 0.5s;
     z-index: 999;
+
+    display: flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .active {
@@ -66,7 +68,7 @@ body {
  .content__menu ul {
     padding: 100px 0px 20px 0px;
     list-style: none; 
-    
+   
 
 } 
 
@@ -106,7 +108,7 @@ body {
 
 
 .container {
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
     background-color: var(--black);
     
@@ -127,9 +129,9 @@ body {
 .subtittle {
     color: var(--grey);
 }
-.header,
-.info,
-.abilities {
+.header
+/*.info,
+.abilities*/ {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -137,6 +139,21 @@ body {
     text-align: center;
     gap: 1rem;
     color: var(--grey);
+}
+
+.info,
+.abilities,
+.portfolio {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    gap: 1rem;
+}
+
+.abilities img {
+    justify-self: center;
 }
 
 .icon__header {
@@ -182,31 +199,33 @@ body {
     
 }
 
-.portfolio {
+/* .portfolio {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: start;
     gap: 1rem;
-}
+} */
 
-.content__contact {
+.contact {
     margin: 1rem;
     
     
 }
 
-.contact {
+.data__contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+    justify-content: center;
+    align-items: center;
     text-align: center;
     gap: 1rem;
     color: var(--grey);
 }
 
 .contact img {
-    margin-left: 80px;
+    align-self:center;
+     /* margin-left: 80px;  */
    
-}
+ }
