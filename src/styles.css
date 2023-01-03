@@ -20,9 +20,9 @@ body {
     
 }
 
-/* img {
-    display: block;
-} */
+.menu__descktop{
+    display: none;
+}
 
 .icon__menu{
     position: relative;
@@ -57,7 +57,7 @@ body {
 }
 
 .active {
-     transform: translateX(-100%);
+     transform: translateX(-300%);
      
 }
 
@@ -113,7 +113,7 @@ body {
 
 
 .container {
-    max-width: 500px;
+    max-width: 500px; 
     margin: 0 auto;
     background-color: var(--black);
     
@@ -155,6 +155,7 @@ body {
     text-align: center;
     color: var(--white);
     gap: 1rem;
+    margin: 80px;
 }
 
 .portfolio__img{
@@ -250,13 +251,40 @@ body {
 
 
  @media (min-width: 800px) {
+   
+
     .icon__menu {
         display: none;
     }
 
     .container {
-        max-width: 1020px;
+        max-width: 100%;
+    } 
+
+    .menu__descktop {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 2rem;
+        
+        width: 100%;
+        background-color: var(--black);
+        padding: 0.8rem;
+        position: fixed;
     }
+
+    .menu__descktop a {
+        text-decoration: none;
+        color: var(--white);
+        
+    }
+
+    .menu__descktop a:nth-child(1){
+        color: var(--grey);
+    }
+
+
+   
 
     .experience {
         text-align: start;
