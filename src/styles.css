@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-margin-top: 60px;
+    
 }
 
 :root {
@@ -9,10 +11,29 @@
     --grey:#ADADAD;
     --white:#FFFFFF;
     --greyoscuro:#646262;
+    
+    
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px 10px var(--greyoscuro);
+    border: solid 2px transparent;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 10px 10px var(--black);
+    border: solid 2px transparent;
+    border-radius: 20px;
 }
 
 html {
     scroll-behavior: smooth;
+    
 }
 
 body {
@@ -33,6 +54,8 @@ body {
 }
 
 .icon__menu img {
+    margin: 20px;
+    border-radius: 12px;
     width: 40px;
     cursor: pointer;
     background-color:var(--white);
@@ -46,14 +69,9 @@ body {
     position: fixed;
     transition: transform 0.5s;
     z-index: 999;
-    
-     display: flex;
+    display: flex;
     justify-content: center;
     align-items: center; 
-
-   
-    
-    
 }
 
 .active {
@@ -119,8 +137,8 @@ body {
     
 }
 
-.header > img {
-     margin-top: 3rem; 
+.header img {
+     margin-top: 6rem; 
 }
 
 .tittle {
@@ -134,6 +152,28 @@ body {
 .subtittle {
     color: var(--grey);
 }
+
+.tittle__animation {
+    z-index: 995;
+    display: block;
+    white-space: nowrap;
+    /* border-right: 4px solid; */
+    width: 17ch;
+
+    animation: typing 3s steps(17);
+    
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from { width: 0;}
+}
+
+.icon__pointer {
+    cursor: pointer;
+}
+
+
 .header
 /*.info,
 .abilities*/ {
@@ -144,6 +184,7 @@ body {
     text-align: center;
     gap: 1rem;
     color: var(--grey);
+    
 }
 
 .info,
@@ -160,7 +201,17 @@ body {
 
 .portfolio__img{
     display: grid;
+    gap: 1rem;
+    cursor: pointer;
+    
 }
+
+.img__portfolio:hover {
+    border: 2px solid var(--grey);
+    
+}
+
+
 
 .abilities__img {
     display: grid;
@@ -168,6 +219,7 @@ body {
 
 .abilities img {
     justify-self: center;
+    cursor: pointer;
 }
 
 .icon__header {
@@ -259,32 +311,49 @@ body {
 
     .container {
         max-width: 100%;
+        
     } 
 
     .menu__descktop {
         display: flex;
         justify-content: end;
         align-items: center;
-        gap: 2rem;
-        
+        gap: 1.5rem;
+       
         width: 100%;
         background-color: var(--black);
-        padding: 0.8rem;
+        padding: 1rem;
         position: fixed;
+    }
+
+    .menu__descktop a {
+         padding: 5px; 
+        font-weight: bold;
+    }
+
+    .menu__descktop a:hover {
+        /* background-color: rgb(22, 12, 117); */
+        color: var(--grey);
+        transform:translateY(0.5rem);
+        
+        
     }
 
     .menu__descktop a {
         text-decoration: none;
         color: var(--white);
+        margin-right: 30px;
         
     }
 
     .menu__descktop a:nth-child(1){
         color: var(--grey);
     }
-
-
-   
+/* 
+    .abilities__img img:hover {
+        width: 60px;
+    }
+    */
 
     .experience {
         text-align: start;
@@ -333,5 +402,7 @@ body {
     .portfolio__img img {
         max-width: 300px;
     }
+
+   
     
  }
