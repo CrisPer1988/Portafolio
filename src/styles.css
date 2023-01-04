@@ -184,6 +184,7 @@ body {
     text-align: center;
     gap: 1rem;
     color: var(--grey);
+     margin: 0 100px; 
     
 }
 
@@ -196,7 +197,7 @@ body {
     text-align: center;
     color: var(--white);
     gap: 1rem;
-    margin: 80px;
+    margin: 80px 100px;
 }
 
 .portfolio__img{
@@ -275,11 +276,11 @@ body {
 } */
 
 .contact {
-    margin: 1rem;
+    
     display: grid;
     text-align: center;
     gap: 3rem;
-    
+   
 }
 
 .data__contact {
@@ -287,12 +288,17 @@ body {
     grid-template-columns: 1fr 1fr; 
     margin: 0 auto;
     gap: 2rem;
-    
-    
+    margin-bottom: 50px;
+    font-size: 1.2rem;
     text-align: center;
-    /* gap: 1rem; */
     color: var(--grey);
 }
+
+.data__contact h6 {
+    font-size: 0.8rem;
+}
+
+
 
 .img__contact {
     margin-left: 40px;
