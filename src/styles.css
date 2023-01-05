@@ -194,6 +194,7 @@ body {
 
 .abilities__img {
     display: grid;
+    gap: 2rem;
 }
 
 .abilities img {
