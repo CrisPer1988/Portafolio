@@ -7,9 +7,9 @@ function closeMenu() {
 
 iconMenu.addEventListener('click', closeMenu);
         
-        
-
 let contentMenu = document.querySelectorAll('#content__menu ul li');
+
 for (const li of contentMenu) {
         li.addEventListener("click", closeMenu);
 }
+

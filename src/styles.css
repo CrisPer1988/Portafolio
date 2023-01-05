@@ -75,93 +75,62 @@ body {
 }
 
 .active {
-     transform: translateX(-300%);
-     
+    transform: translateX(-300%);
 }
 
-/* .opacity {
-    background-color: blue;
-    
-
-} */
-
-
-
- .content__menu ul {
+.content__menu ul {
     list-style: none; 
 } 
 
- .content__menu ul li {
-    
-    
+.content__menu ul li {
     text-decoration: none;
-    /* padding: 20px 80px;  */
     margin: 30px 20px;
     text-align: center;
     cursor: pointer;
-    
-    /* text-align: center; */
 }
 
 .content__menu ul li a {
     text-decoration: none;
     color: var(--greyoscuro);
     font-size: 1.5rem;
-   
 }
-
 
 .content__menu ul li:hover {
     background-color: blanchedalmond;
     text-decoration: none;
-    
 } 
  
-
-
-
-
-
-
-
-
-
-
-
-
-
 .container {
     max-width: 500px; 
     margin: 0 auto;
     background-color: var(--black);
-    
 }
 
 .header img {
-     margin-top: 6rem; 
+    margin-top: 6rem; 
 }
 
 .tittle {
     color: var(--white);
+    font-size: 2.2rem;
 }
 
 .tittle__seccion {
     color: var(--white);
+    font-size: 2rem;
 }
 
 .subtittle {
     color: var(--grey);
+    font-size: 1.5rem;
 }
 
 .tittle__animation {
     z-index: 995;
     display: block;
     white-space: nowrap;
-    /* border-right: 4px solid; */
     width: 17ch;
-
     animation: typing 3s steps(17);
-    
     overflow: hidden;
 }
 
@@ -173,10 +142,7 @@ body {
     cursor: pointer;
 }
 
-
-.header
-/*.info,
-.abilities*/ {
+.header {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -184,7 +150,17 @@ body {
     text-align: center;
     gap: 1rem;
     color: var(--grey);
-     margin: 0 100px; 
+    margin: 0 100px; 
+}
+
+.header img {
+    border: 2px solid transparent
+}
+
+.header img:hover{
+    border: 2px solid var(--grey);
+    border-radius: 7px;
+    
     
 }
 
@@ -207,12 +183,14 @@ body {
     
 }
 
+.img__portfolio {
+    border: 3px solid transparent;
+}
+
 .img__portfolio:hover {
     border: 2px solid var(--grey);
     
 }
-
-
 
 .abilities__img {
     display: grid;
@@ -232,6 +210,7 @@ body {
 .info p {
     color: var(--grey);
     margin-bottom: 2rem;
+    font-size: 1.3rem;
 }
 
 .experience {
@@ -245,16 +224,18 @@ body {
 }
 
 .experience {
-    margin-top: 2rem;
+    margin-top: 2rem
 }
 
 .experience h4 {
     color: var(--white);
+    font-size: 1.5rem;
 }
 
 
 .experience > h6 {
     grid-column: 2 / 3;
+    font-size: 1rem;
 }
 
 .experience > h4 {
@@ -266,21 +247,11 @@ body {
     
 }
 
-/* .portfolio {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: start;
-    gap: 1rem;
-} */
-
 .contact {
     
     display: grid;
     text-align: center;
     gap: 3rem;
-   
 }
 
 .data__contact {
@@ -295,29 +266,25 @@ body {
 }
 
 .data__contact h6 {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
 }
 
-
+.data__contact h4 {
+    font-size: 1.5rem;
+}
 
 .img__contact {
-    margin-left: 40px;
+    margin-left: 85px;
     
 }
 
-
-
-
- @media (min-width: 800px) {
-   
-
+@media (min-width: 800px) {
     .icon__menu {
         display: none;
     }
 
     .container {
         max-width: 100%;
-        
     } 
 
     .menu__descktop {
@@ -325,7 +292,6 @@ body {
         justify-content: end;
         align-items: center;
         gap: 1.5rem;
-       
         width: 100%;
         background-color: var(--black);
         padding: 1rem;
@@ -333,33 +299,24 @@ body {
     }
 
     .menu__descktop a {
-         padding: 5px; 
+        padding: 5px; 
         font-weight: bold;
     }
 
     .menu__descktop a:hover {
-        /* background-color: rgb(22, 12, 117); */
         color: var(--grey);
         transform:translateY(0.5rem);
-        
-        
     }
 
     .menu__descktop a {
         text-decoration: none;
         color: var(--white);
         margin-right: 30px;
-        
     }
 
     .menu__descktop a:nth-child(1){
         color: var(--grey);
     }
-/* 
-    .abilities__img img:hover {
-        width: 60px;
-    }
-    */
 
     .experience {
         text-align: start;
@@ -372,7 +329,6 @@ body {
     .experience h2 {
         text-align: center;
     }
-
 
     .abilities__img {
         display: grid;
@@ -397,7 +353,7 @@ body {
 
     .abilities__img :nth-child(7){
         grid-column: 2 / 3;
-         grid-row: 3 / 4; 
+        grid-row: 3 / 4; 
     }
 
     .portfolio__img {
@@ -408,7 +364,4 @@ body {
     .portfolio__img img {
         max-width: 300px;
     }
-
-   
-    
- }
+}
