@@ -250,15 +250,14 @@ body {
 .contact {
     
     display: grid;
+    justify-content: center;
     text-align: center;
     gap: 3rem;
 }
 
 .data__contact {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    margin: 0 auto;
-    gap: 2rem;
+    display: grid; grid-template-columns: 1fr 1fr; 
+    gap: 1rem;
     margin-bottom: 50px;
     font-size: 1.2rem;
     text-align: center;
@@ -274,7 +273,7 @@ body {
 }
 
 .img__contact {
-    margin-left: 85px;
+    margin: 0 auto;
     
 }
 
