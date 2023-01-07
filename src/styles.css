@@ -104,6 +104,7 @@ body {
     max-width: 500px; 
     margin: 0 auto;
     background-color: var(--black);
+    overflow: hidden;
 }
 
 .header img {
@@ -199,6 +200,38 @@ body {
 .img__portfolio:hover {
     border: 2px solid var(--grey);
     
+}
+
+
+
+
+.vector {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    opacity: 20%;
+    border: 1px solid var(--grey);
+    margin-left: 400px;
+}
+
+.vector2 {
+    
+    
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 1px solid var(--grey);
+    margin: 8px;
+}
+
+.vector3 {
+   
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 1px solid var(--grey);
+    align-self: center;
+    margin: 8px;
 }
 
 .abilities__img {
