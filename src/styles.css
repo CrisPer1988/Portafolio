@@ -306,6 +306,7 @@ body {
 }
 
 
+
 .experience h4 {
     color: var(--white);
     font-size: 1.5rem;
@@ -473,20 +474,11 @@ body {
         margin: 15px;
     }
 
-    .mode {
-        justify-content: flex-end;
-        align-items: center;
-        margin-left:10px ;
+    .mode {  
+        align-items: center;      
         margin-top: 10px;
         width: 60px;
         gap: 1rem;  
-         
+        left: 60px;
     } 
-
-    .mode img {
-        display: inline;
-       
-        
-    }
-
 }
