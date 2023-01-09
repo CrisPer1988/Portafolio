@@ -13,3 +13,8 @@ for (const li of contentMenu) {
         li.addEventListener("click", closeMenu);
 }
 
+let iconMode = document.querySelector(".ligth");
+
+iconMode.addEventListener("click", function () {
+    document.body.classList.toggle("ligth");
+});

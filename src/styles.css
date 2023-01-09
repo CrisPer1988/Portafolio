@@ -8,12 +8,44 @@
 
 :root {
     --black:#020403;
-    --grey:#ADADAD;
+    --grey:#eeeaea;
     --white:#FFFFFF;
-    --greyoscuro:#646262;
-    
+    --greyoscuro:#646262;  
+    --greyvector:#c9bebe; 
+    --backgroundicons: rgba(19, 81, 153, 0.658);
+}
+
+body.ligth {
+    --black:#e8eee7;
+    --grey:#666464;
+    --white:#020403;
+    --greyoscuro:#201f1f; 
+    --greyvector:#272525;
+    --backgroundicons: rgba(170, 19, 230, 0.658);
+}
+
+.mode {
+    z-index: 10101;
+    position: fixed;
+    width: 500px;
+    margin-top: 60px;
+
+}
+
+.mode img {
+    width: 40px;
+    text-decoration: none;
+    color: var(--white);
+    margin: 20px;
+    background-color: var(--black);
+    border-radius: 10px;
+    overflow: hidden;
+    align-self: center;
+
     
 }
+
+
 
 ::-webkit-scrollbar {
     width: 15px;
@@ -43,6 +75,7 @@ body {
 
 .menu__descktop{
     display: none;
+    z-index: 10100;
 }
 
 .icon__menu{
@@ -127,7 +160,6 @@ body {
 }
 
 .tittle__animation {
-    z-index: 995;
     display: block;
     white-space: nowrap;
     width: 17ch;
@@ -148,9 +180,6 @@ body {
     50%{border-color: transparent;}
 }
 
-.icon__pointer {
-    cursor: pointer;
-}
 
 .header {
     display: flex;
@@ -202,7 +231,9 @@ body {
     
 }
 
-
+.abilities {
+    position: relative;
+}
 
 
 .vector {
@@ -210,8 +241,9 @@ body {
     height: 180px;
     border-radius: 50%;
     opacity: 20%;
-    border: 1px solid var(--grey);
-    margin-left: 400px;
+    border: 1px solid var(--greyvector);
+    margin-left: 200px;
+    position: absolute;
 }
 
 .vector2 {
@@ -220,7 +252,7 @@ body {
     width: 160px;
     height: 160px;
     border-radius: 50%;
-    border: 1px solid var(--grey);
+    border: 1px solid var(--greyvector);
     margin: 8px;
 }
 
@@ -229,7 +261,7 @@ body {
     width: 140px;
     height: 140px;
     border-radius: 50%;
-    border: 1px solid var(--grey);
+    border: 1px solid var(--greyvector);
     align-self: center;
     margin: 8px;
 }
@@ -238,6 +270,12 @@ body {
     display: grid;
     gap: 2rem;
 }
+
+.abilities__img img {
+    background-color: var(--backgroundicons);
+    border-top-right-radius: 20px;
+}
+
 
 .abilities img {
     justify-self: center;
@@ -248,6 +286,11 @@ body {
     display: flex;
     gap: 3rem;
     margin-bottom: 2rem;
+}
+
+.icon__header a {
+    background-color: var(--backgroundicons);
+    border-top-right-radius: 20px;
 }
 
 .info p {
@@ -305,6 +348,13 @@ body {
     font-size: 1.2rem;
     text-align: center;
     color: var(--grey);
+}
+
+.data__contact a img {
+    background-color: var(--backgroundicons);
+    border-top-left-radius: 20px;
+    overflow: hidden;
+    width: 60px;
 }
 
 .data__contact h6 {
@@ -405,5 +455,37 @@ body {
 
     .portfolio__img img {
         max-width: 300px;
+    }
+
+    .vector {
+        width: 400px;
+        height: 400px;
+        margin-left: 900px;
+        
+    }
+
+    .vector2 {
+        width: 360px;
+        height: 360px ;
+        margin: 10px;
+    }
+
+    .vector3 {
+        width: 320px;
+        height: 320px ;
+        margin: 15px;
+    }
+
+    .mode {
+        justify-content: flex-start;
+        margin-top: 0px
+        
+
+    } 
+
+    .mode a img{
+        display: inline;
+        
+    
     }
 }
