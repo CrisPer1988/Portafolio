@@ -302,11 +302,9 @@ body {
     text-align: center;
     gap: 1rem;
     color: var(--grey);
-}
-
-.experience {
     margin-top: 2rem
 }
+
 
 .experience h4 {
     color: var(--white);
