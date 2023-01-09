@@ -30,20 +30,20 @@ body.ligth {
     position: fixed;
     width: 500px;
     margin-top: 60px;
-
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
 }
 
 .mode img {
+   
     width: 40px;
     text-decoration: none;
     color: var(--white);
-    margin: 20px;
+    margin-right: 20px;
     background-color: var(--black);
     border-radius: 10px;
-    overflow: hidden;
-    align-self: center;
-
-    
+    overflow: hidden;   
 }
 
 ::-webkit-scrollbar {
@@ -133,7 +133,7 @@ body {
 } 
 
 .container {
-    max-width: 500px; 
+    width: 500px; 
     margin: 0 auto;
     background-color: var(--black);
     overflow: hidden;
@@ -341,6 +341,7 @@ body {
     font-size: 1.2rem;
     text-align: center;
     color: var(--grey);
+    margin: 20px;
 }
 
 .data__contact a img {
@@ -368,21 +369,20 @@ body {
     margin: 10px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
     .icon__menu {
         display: none;
     }
 
     .container {
-        max-width: 100%;
+        width: 90%;
     } 
 
     .menu__descktop {
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        gap: 1.5rem;
-        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20px, 1fr)); 
+        justify-content: space-around;      
+        width: 90%;
         background-color: var(--black);
         padding: 1rem;
         position: fixed;
@@ -391,6 +391,7 @@ body {
     .menu__descktop a {
         padding: 5px; 
         font-weight: bold;
+        margin: 0 auto;
     }
 
     .menu__descktop a:hover {
@@ -401,7 +402,6 @@ body {
     .menu__descktop a {
         text-decoration: none;
         color: var(--white);
-        margin-right: 30px;
     }
 
     .menu__descktop a:nth-child(1){
@@ -475,7 +475,18 @@ body {
     }
 
     .mode {
-        justify-content: flex-start;
-        margin-top: -10px;     
+        justify-content: flex-end;
+        align-items: center;
+        margin-left:10px ;
+        margin-top: 10px;
+        width: 60px;
+        gap: 1rem;   
     } 
+
+    .mode img {
+        display: inline;
+       
+        
+    }
+
 }
