@@ -363,6 +363,11 @@ body {
     
 }
 
+.code a {
+    color: #FFFFFF;
+    margin: 10px;
+}
+
 @media (min-width: 800px) {
     .icon__menu {
         display: none;

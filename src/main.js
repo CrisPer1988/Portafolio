@@ -1,6 +1,8 @@
 let iconMenu = document.querySelector('#icon__menu');
 let menu = document.querySelector('#content__menu');
+let iconMode = document.querySelector(".ligth");
 
+//----------MENU HAMBURGUESA----------------------
 function closeMenu() {
         menu.classList.toggle('active'); 
 }
@@ -13,8 +15,7 @@ for (const li of contentMenu) {
         li.addEventListener("click", closeMenu);
 }
 
-let iconMode = document.querySelector(".ligth");
-
+//---------------LIGHT-MODE-----------------------
 iconMode.addEventListener("click", function () {
     document.body.classList.toggle("ligth");
 });
