@@ -13,6 +13,7 @@
     --greyoscuro:#646262;  
     --greyvector:#c9bebe; 
     --backgroundicons: rgba(19, 81, 153, 0.658);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body.ligth {
@@ -91,7 +92,7 @@ body {
     border-radius: 12px;
     width: 40px;
     cursor: pointer;
-    background-color:var(--white);
+    background-color: #FFFFFF;
     position: fixed;
 }
 
@@ -106,6 +107,7 @@ body {
     justify-content: center;
     align-items: center; 
 }
+
 
 .active {
     transform: translateX(-300%);
@@ -124,12 +126,12 @@ body {
 
 .content__menu ul li a {
     text-decoration: none;
-    color: var(--greyoscuro);
+    color: var(--black);
     font-size: 1.5rem;
 }
 
 .content__menu ul li:hover {
-    background-color: blanchedalmond;
+    background-color: rgb(113, 99, 241);
     text-decoration: none;
 } 
  
