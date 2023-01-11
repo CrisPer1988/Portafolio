@@ -28,21 +28,17 @@ body.ligth {
 .mode {
     z-index: 10101;
     position: fixed;
-    width: 60px;
-    right: 0;
+    top: 0;
+    right: 50px;
     margin-top: 60px;
     display: flex;
-    justify-content: end;
+    justify-content:flex-end;
     margin-top: 20px;
 }
 
 .mode img {
-   
     width: 40px;
-    text-decoration: none;
-    color: var(--white);
-    margin-right: 20px;
-    background-color: var(--black);
+    background-color: transparent;
     border-radius: 10px;
     overflow: hidden;   
 }
@@ -134,7 +130,7 @@ body {
 } 
 
 .container {
-    width: 500px; 
+    max-width: 500px; 
     margin: 0 auto;
     background-color: var(--black);
     overflow: hidden;
@@ -375,7 +371,7 @@ body {
     }
 
     .container {
-        width: 90%;
+        max-width: 100%;
     } 
 
     .menu__descktop {
@@ -479,6 +475,9 @@ body {
         margin-top: 10px;
         width: 60px;
         gap: 1rem;  
-        left: 70px;
+        bottom: -80%;
+        left: 0;
     } 
+
+   
 }
