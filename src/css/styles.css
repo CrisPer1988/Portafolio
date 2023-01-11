@@ -61,7 +61,7 @@ body.ligth {
 
 html {
     scroll-behavior: smooth;
-    
+    user-select: none;
 }
 
 body {
